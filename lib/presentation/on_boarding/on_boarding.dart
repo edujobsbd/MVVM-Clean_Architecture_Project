@@ -10,6 +10,16 @@ class OnBoardingView extends StatefulWidget {
 class _OnBoardingViewState extends State<OnBoardingView> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.white,
+      child: Center(
+        child: Text('Hello World',style: TextStyle(
+          decoration: TextDecoration.none,
+          fontSize: 30.0,
+          fontWeight: FontWeight.bold,
+          fontStyle: FontStyle.italic
+        ),),
+      ),
+    );
   }
 }

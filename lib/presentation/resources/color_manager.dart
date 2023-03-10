@@ -12,15 +12,17 @@ class ColorManager {
   static Color grey1 = HexColor.formHex('#707070');
   static Color grey2 = HexColor.formHex('#797979');
   static Color white = HexColor.formHex('#FFFFFF');
-  static Color error = HexColor.formHex('#e61f34');//red color for error
+  static Color error = HexColor.formHex('#e61f34'); //red color for error
 }
 
 extension HexColor on Color {
   static Color formHex(String hexColorString) {
     hexColorString = hexColorString.replaceAll('#', '');
-    if (hexColorString.length == 5) {
+    if (hexColorString.length == 6) {
       hexColorString = 'FF' + hexColorString; //8 charecter opacity 100%;
     }
-    return Color(int.parse(hexColorString, radix: 16));
+    return Color(
+      int.parse(hexColorString, radix: 16),
+    );
   }
 }
