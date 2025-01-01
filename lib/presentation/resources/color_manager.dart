@@ -4,8 +4,8 @@ class ColorManager {
   static Color primary = HexColor.formHex('#ED9728');
   static Color darkGrey = HexColor.formHex('#525252');
   static Color grey = HexColor.formHex('#737477');
-  static Color lightGray = HexColor.formHex('#9E9E9E ');
-  static Color primaryOpacity70 = HexColor.formHex('#B3ED9728 ');
+  static Color lightGray = HexColor.formHex('#9E9E9E');
+  static Color primaryOpacity70 = HexColor.formHex('#B3ED9728');
 
   //new color
   static Color darkPrimary = HexColor.formHex('#d17d11');

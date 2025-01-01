@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mvvmproject/presentation/resources/phone_manager.dart';
-import 'package:mvvmproject/presentation/resources/phone_manager.dart';
 
 TextStyle _getTextStyle(
     double fontSize, String fontFamily, Color color, FontWeight fontWeight) {
@@ -20,14 +19,14 @@ TextStyle getRegular({double fontSize = FontSize.s12, required Color color}) {
 
 // light text style
 
-TextStyle getLightStyle ({double fontSize = FontSize.s12, required Color color}) {
+TextStyle getLightStyle({double fontSize = FontSize.s12, required Color color}) {
   return _getTextStyle(
       fontSize, FontContents.fontFamily, color, FontWeightManager.light);
 }
 
 // bold text style
 
-TextStyle getBoldStyle ({double fontSize = FontSize.s12, required Color color}) {
+TextStyle getBoldStyle({double fontSize = FontSize.s12, required Color color}) {
   return _getTextStyle(
       fontSize, FontContents.fontFamily, color, FontWeightManager.bold);
 }
@@ -41,7 +40,7 @@ TextStyle getSemiBold({double fontSize = FontSize.s12, required Color color}) {
 
 // medium  text style
 
-TextStyle getMedium  ({double fontSize = FontSize.s12, required Color color}) {
+TextStyle getMedium({double fontSize = FontSize.s12, required Color color}) {
   return _getTextStyle(
       fontSize, FontContents.fontFamily, color, FontWeightManager.medium);
 }
