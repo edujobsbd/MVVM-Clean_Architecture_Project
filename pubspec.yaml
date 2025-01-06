@@ -15,15 +15,22 @@ dependencies:
   dio: ^4.0.0
   json_serializable: ^4.1.4
   json_annotation: ^4.0.1
+  build_runner: ^2.1.4
+  analyzer: ^1.7.0
+  dartz: ^0.10.0
+  data_connection_checker: ^0.3.4
+  pretty_dio_logger: ^1.1.1
+  shared_preferences: ^2.0.15
+  device_info: ^2.0.2
+  freezed: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   retrofit_generator: ^2.0.1
-  build_runner: ^2.1.4
-  analyzer: ^1.7.0
 
   flutter_lints: ^1.0.0
+
 flutter:
   uses-material-design: true
 

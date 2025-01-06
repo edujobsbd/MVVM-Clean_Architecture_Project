@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mvvmproject/presentation/login/login_viewmodel.dart';
 import 'package:mvvmproject/presentation/on_boarding/onBoarding_viewModel.dart';
 import 'package:mvvmproject/presentation/resources/assets_manager.dart';
 import 'package:mvvmproject/presentation/resources/color_manager.dart';
 import 'package:mvvmproject/presentation/resources/value_manager.dart';
 import 'package:mvvmproject/presentation/string_manager.dart';
 
-import '../../domain/model.dart';
+import '../../domain/model/model.dart';
+import '../login/log_in.dart';
 import '../register/register.dart';
 
 class OnBoardingView extends StatefulWidget {
@@ -75,7 +77,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) =>  RegisterView()),
+                    MaterialPageRoute(builder: (context) =>  LogInView()),
                   );
                 },
                 child: Text(
