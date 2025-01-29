@@ -21,4 +21,7 @@ class AppString {
   static const String login = 'Login';
   static const String forgetPassword = 'Forget Password';
   static const String signUp = 'Not a member? Sign Up';
+  static const String loading = 'Loading...';
+  static const String tryAgain = 'Retry Again';
+  static const String ok = 'OK';
 }

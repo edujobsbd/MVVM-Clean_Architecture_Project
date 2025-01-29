@@ -65,12 +65,12 @@ class OnBoardingViewModel extends BaseViewModel
   List<SliderObject> _getSliderData() => [
         SliderObject(AppString.onBoardingTitle1, AppString.onBoardingSubTitle1,
             ImageAssets.onboarding_logo1),
+        SliderObject(AppString.onBoardingTitle3, AppString.onBoardingSubTitle3,
+            ImageAssets.onboarding_logo3),
         SliderObject(AppString.onBoardingTitle2, AppString.onBoardingSubTitle2,
             ImageAssets.onboarding_logo2),
-        SliderObject(AppString.onBoardingTitle3, AppString.onBoardingSubTitle3,
-            ImageAssets.onboarding_logo3),
-        SliderObject(AppString.onBoardingTitle3, AppString.onBoardingSubTitle3,
-            ImageAssets.onboarding_logo3),
+        SliderObject(AppString.onBoardingTitle4, AppString.onBoardingSubTitle4,
+            ImageAssets.onboarding_logo4),
       ];
 
   _postDataToView() {

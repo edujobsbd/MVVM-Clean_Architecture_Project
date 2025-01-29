@@ -12,6 +12,7 @@ class ColorManager {
   static Color grey1 = HexColor.formHex('#707070');
   static Color grey2 = HexColor.formHex('#797979');
   static Color white = HexColor.formHex('#FFFFFF');
+  static Color black = HexColor.formHex('#000000');
   static Color error = HexColor.formHex('#e61f34'); //red color for error
 }
 

@@ -23,7 +23,8 @@ dependencies:
   shared_preferences: ^2.0.15
   device_info: ^2.0.2
   freezed: any
-
+  get_it: ^7.2.0
+  lottie: ^1.2.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -44,6 +45,10 @@ flutter:
      - assets/image/left_arrow_ic.svg
      - assets/image/right_arrow_ic.svg
      - assets/image/solid_circle_ic.svg
+     - assets/json/empty.json
+     - assets/json/error.json
+     - assets/json/loading.json
+     - assets/json/success.json
 
   fonts:
      - family: Montserrat

@@ -1,6 +1,5 @@
 
 import 'package:dio/dio.dart';
-import 'package:mvvmproject/data/request/request.dart';
 import 'package:retrofit/http.dart';
 import '../responses/responses.dart';
 import '../../app/constant.dart';

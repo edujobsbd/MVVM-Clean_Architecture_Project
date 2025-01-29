@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math';
 
 import 'package:device_info/device_info.dart';
 import 'package:flutter/services.dart';
@@ -16,7 +15,7 @@ Future<DeviceInfo> getDeviceInfo() async {
   try {
     if (Platform.isAndroid) {
       var build = await deviceInfoPlugin.androidInfo;
-      name = build.brand+' '+build.model;
+      name = build.brand + ' ' + build.model;
       version = build.version.codename;
       identifier = build.androidId;
     } else if (Platform.isIOS) {
@@ -26,7 +25,11 @@ Future<DeviceInfo> getDeviceInfo() async {
       identifier = iosInfo.identifierForVendor;
     }
   } on PlatformException {
-    return DeviceInfo(name, identifier, version);
+    return DeviceInfo(
+      name,
+      version,
+      identifier,
+    );
   }
-  return DeviceInfo(name, identifier, version);
+  return DeviceInfo(name, version, identifier);
 }

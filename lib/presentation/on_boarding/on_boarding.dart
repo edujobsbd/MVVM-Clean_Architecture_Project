@@ -77,7 +77,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) =>  LogInView()),
+                    MaterialPageRoute(builder: (context) =>  LoginView()),
                   );
                 },
                 child: Text(

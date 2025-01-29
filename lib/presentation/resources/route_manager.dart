@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mvvmproject/app/di.dart';
 import 'package:mvvmproject/presentation/splash/splash.dart';
 import 'package:mvvmproject/presentation/string_manager.dart';
 
@@ -30,7 +31,8 @@ class RouteGenerator {
       case Routes.onBoardingRoute:
         return MaterialPageRoute(builder: (_) => OnBoardingView());
       case Routes.logInRoute:
-        return MaterialPageRoute(builder: (_) => LogInView());
+        initLoginModule();
+        return MaterialPageRoute(builder: (_) => LoginView());
       case Routes.registrationRoute:
         return MaterialPageRoute(builder: (_) => RegisterView());
       case Routes.forgetPasswordRoute:
